@@ -10,6 +10,7 @@ const OK_STYLE = "background-color: #00e070; color: white";
 const ERROR_STYLE = "background-color: red; color: white";
 
 const check = () => {
+    if (window.location.href.split("/")[2] !== "webap.nuk.edu.tw") return;
     for (let idx = 1 ; idx < tbody.children.length ; idx++) {
         let date = tbody.children[idx].children[DATE_IDX].innerText;
         let stime = tbody.children[idx].children[STIME_IDX].innerText;
